@@ -15,11 +15,11 @@ class ShowHide extends Component {
 
   render() {
     const {isHideFN} = this.state
-    const toSHowFirstName = isHideFN ? 'name-container' : null
-    const fname = isHideFN ? 'Joe' : null
+    const toSHowFirstName = !isHideFN ? 'name-container' : null
+    const fname = !isHideFN ? 'Joe' : null
     const {isHideLN} = this.state
-    const toSHowLastName = isHideLN ? 'name-container' : null
-    const lname = isHideLN ? 'Jonas' : null
+    const toSHowLastName = !isHideLN ? 'name-container' : null
+    const lname = !isHideLN ? 'Jonas' : null
 
     return (
       <div className="bg-container">
